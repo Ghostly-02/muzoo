@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museu de Taxidermia - Agendamento de Visitas</title>
+    <link rel="stylesheet" href="../Css/Agendar-horário.css">
+    <script src="../Js/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar"> 
+            <div class="container">
+                <div class="logo">
+                    <img src="../Imagens/ifmg_bambui_horizontal.png" alt="Logo do MUZOO">
+                </div>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="Homepage.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="Animais-taxidermizados.html" class="nav-link">Animais Taxidermizados</a></li>
+                    <li class="nav-item"><a href="História-taxidermia.html" class="nav-link">Taxidermia</a></li>
+                    <li class="nav-item"><a href="Agendar-horário.html" class="nav-link">Horários</a></li>
+                </ul>
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()"><img class="icon" src="../Imagens/menu_black.png" alt="Menu Icon"></button>
+                </div>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="Homepage.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="História-taxidermia.html" class="nav-link">História da Taxidermia</a></li>
+                <li class="nav-item"><a href="Agendar-horário.html" class="nav-link">Agendar Horários</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <main>
+        <section id="home">
+            <h1>Bem-vindo ao Museu de Taxidermia</h1>
+            <p>Descubra a arte da preservação de animais através da taxidermia.</p>
+        </section>
+        <section id="about">
+            <h2>Sobre o Museu</h2>
+            <p>O Museu de Taxidermia apresenta uma coleção fascinante de espécimes preservados, oferecendo uma visão
+                educativa e intrigante sobre a arte da taxidermia.</p>
+        </section>
+        <section id="schedule">
+            <h2>Agendar Visita</h2>
+            <form action="submit_form.php" method="post" id="schedule-form">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="date">Data da Visita:</label>
+                <input type="date" id="date" name="date" required>
+                <label for="time">Horário:</label>
+                <input type="time" id="time" name="time" required>
+                <button type="submit">Agendar</button>
+            </form>
+        </section>
+        <section id="contact">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco através do email: contato@ifmg.edu.br</p>
+        </section>
+    </main>
+    <!-- Footer -->
+  <footer class="footer">
+    <div class="container-footer">
+      <div class="row">
+        <div class="footer-info">
+          <h4>O Campus Bambuí integra o Instituto Federal de Ciência, Educação e Tecnologia de Minas Gerais (IFMG) e
+            possui uma área total de 328,76 hectares e cerca de 40 mil metros quadrados de construções, onde são
+            oferecidos cursos profissionalizantes, de Ensino Médio, de graduação (Tecnologia, Bacharelado e
+            Licenciatura) e pós-graduação (Lato Sensu e Stricto Sensu).</h4>
+        </div>
+        <div class="footer-contact">
+          <h4>Informações</h4>
+          <ul>
+            <li><a href="#">Ensino</a></li>
+            <li><a href="#">Extensão</a></li>
+            <li><a href="#">Pesquisa e Pós-graduação</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contate-nos</h4>
+          <ul>
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              Faz. Varginha - Rodovia Bambuí/Medeiros - Km 05 - Caixa Postal 05 - Bambuí - MG - CEP: 38.900-000
+            </li>
+            <li>
+              <i class="fa-solid fa-square-phone"></i>
+              Telefone: (37) 3431-4900
+            </li>
+            <li>
+                <i class="fa-solid fa-envelope"></i>
+                E-mail:<a href="mailto:moodle.bambui@ifmg.edu.br">moodle.bambui@ifmg.edu.br</a>
+              </li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Siga-nos</h4>
+          <div class="social-links">
+            <a href="https://x.com/ifmgbambui"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/channel/UC2EFDI2jcOdM-EpQy3gWWuQ"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.instagram.com/ifmg.bambui/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/ifmgbambui"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+  </footer>
+    <div class="footer-bottom">
+    <p>© 2023 MUZOO - Museu de Zoologia. Todos os direitos reservados.</p>
+    </div>
+</body>
+
+</html>

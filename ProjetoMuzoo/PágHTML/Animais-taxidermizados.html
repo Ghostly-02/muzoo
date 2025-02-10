@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animais Taxidermizados</title>
+    <link rel="stylesheet" href="../Css/teste.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../Js/script.js" defer></script>
+</head>
+
+<body>
+    <!--Inicio Header-->
+    <header>
+        <nav class="nav-bar"> 
+            <div class="container">
+                <div class="logo">
+                    <img src="../Imagens/ifmg_bambui_horizontal.png" alt="Logo do MUZOO">
+                </div>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="Homepage.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="Animais-taxidermizados.html" class="nav-link">Animais Taxidermizados</a></li>
+                    <li class="nav-item"><a href="História-taxidermia.html" class="nav-link">Taxidermia</a></li>
+                    <li class="nav-item"><a href="Agendar-horário.html" class="nav-link">Horários</a></li>
+                </ul>
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()"><img class="icon" src="../Imagens/menu_black.png" alt="Menu Icon"></button>
+                </div>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="Homepage.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="História-taxidermia.html" class="nav-link">História da Taxidermia</a></li>
+                <li class="nav-item"><a href="Agendar-horário.html" class="nav-link">Agendar Horários</a></li>
+            </ul>
+        </div>
+    </header>
+    <!--Fim Header-->
+    <!--Inicio Banner-->
+    <section class="hero1">
+        <div class="hero-content">
+            <h1>Explorando o Reino Animal</h1>
+            <p>Descubra a diversidade e a beleza do mundo animal.</p>
+            <a href="#classes" class="btn">Conheça as Classes</a>
+        </div>
+    </section>
+<!--Fim Banner-->
+<!--O QUE É UM ANIMAL - INTRODUÇÃO - INICIO -->
+<section class="conteudo">
+    <h2>O que é um animal?</h2>
+    <div class="conteudo-flex reverse">
+      <div class="imagem">
+        <img src="../Imagens/onça.jpg" alt="Taxidermia Antiga" class="imagem-conteudo">
+      </div>
+      <div class="text">
+        <p>
+            Os animais são seres vivos incríveis que fazem parte do reino Animalia. Eles são organismos multicelulares, capazes de se mover, responder a estímulos e interagir com o ambiente. Desde os pequenos insetos até os majestosos mamíferos, os animais desempenham papéis essenciais na manutenção dos ecossistemas.
+        </p>
+        <p>
+            Eles são classificados em diversos grupos, como mamíferos, aves, répteis, peixes e anfíbios, cada um com características únicas. Os animais não apenas enriquecem a biodiversidade do planeta, mas também inspiram a humanidade com sua beleza e complexidade.
+        </p>
+      </div>
+    </div>
+  </section>
+<!--Seção Classe de Animais - INICIO-->
+<main id="classes">
+    <div class="conteudo">
+        <h2>Classes de Animais</h2>
+        <div class="cards-container">
+            <div class="card">
+                <a href="Classe-Mamifero.html">
+                    <img src="../Imagens/mamiferos.jfif" alt="Mamífero">
+                </a>
+                <h3>Mamíferos</h3>
+                <p>Animais que possuem glândulas mamárias e pelos.</p>
+            </div>
+            <div class="card">
+                <a href="aves.html">
+                    <img src="../Imagens/aves.jfif" alt="Ave">
+                </a>
+                <h3>Aves</h3>
+                <p>Animais com penas e geralmente a capacidade de voar.</p>
+            </div>
+            <div class="card">
+                <a href="Répteis.html">
+                    <img src="../Imagens/reptils.jfif" alt="Réptil">
+                </a>
+                <h3>Répteis</h3>
+                <p>Animais de sangue frio com escamas.</p>
+            </div>
+            <div class="card">
+                <a href="Peixe.html">
+                    <img src="../Imagens/Peixes.jfif" alt="Peixe">
+                </a>
+                <h3>Peixes</h3>
+                <p>Animais aquáticos com brânquias.</p>
+            </div>
+            <div class="card">
+                <a href="Anfíbios.html">
+                    <img src="../Imagens/anfibios.jfif" alt="Anfíbio">
+                </a>
+                <h3>Anfíbios</h3>
+                <p>Animais que vivem tanto na água quanto na terra.</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<!--Seção Classe de Animais - FIM-->
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container-footer">
+          <div class="row">
+            <div class="footer-info">
+              <h4>O Campus Bambuí integra o Instituto Federal de Ciência, Educação e Tecnologia de Minas Gerais (IFMG) e
+                possui uma área total de 328,76 hectares e cerca de 40 mil metros quadrados de construções, onde são
+                oferecidos cursos profissionalizantes, de Ensino Médio, de graduação (Tecnologia, Bacharelado e
+                Licenciatura) e pós-graduação (Lato Sensu e Stricto Sensu).</h4>
+            </div>
+            <div class="footer-contact">
+              <h4>Informações</h4>
+              <ul>
+                <li><a href="#">Ensino</a></li>
+                <li><a href="#">Extensão</a></li>
+                <li><a href="#">Pesquisa e Pós-graduação</a></li>
+              </ul>
+            </div>
+            <div class="footer-contact">
+              <h4>Contate-nos</h4>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  Faz. Varginha - Rodovia Bambuí/Medeiros - Km 05 - Caixa Postal 05 - Bambuí - MG - CEP: 38.900-000
+                </li>
+                <li>
+                  <i class="fa-solid fa-square-phone"></i>
+                  Telefone: (37) 3431-4900
+                </li>
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    E-mail:<a href="mailto:moodle.bambui@ifmg.edu.br">moodle.bambui@ifmg.edu.br</a>
+                  </li>
+              </ul>
+            </div>
+            <div class="footer-social">
+              <h4>Siga-nos</h4>
+              <div class="social-links">
+                <a href="https://x.com/ifmgbambui"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/channel/UC2EFDI2jcOdM-EpQy3gWWuQ"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com/ifmg.bambui/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/ifmgbambui"><i class="fab fa-facebook-f"></i></a>
+              </div>
+            </div>
+          </div>
+         
+        </div>
+      </footer>
+        <div class="footer-bottom">
+        <p>© 2023 MUZOO - Museu de Zoologia. Todos os direitos reservados.</p>
+        </div>
+</body>
+
+</html>
